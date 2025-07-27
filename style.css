@@ -1,0 +1,115 @@
+
+* {                    /* Общее изменение для акуратности(без это страница плывет чучуть) */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Шрифты и то как выглядит текст*/
+  background-color: #000;
+  color: #fff;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 40px 20px;
+}
+
+                    /* Заголовок */
+header h1 {
+  font-size: 3rem;
+  color: rgba(255, 255, 255, 0.9);
+  margin-bottom: 60px;
+}
+
+
+                                    /* карточки в которых находится название и дискрипшн */
+.card {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: rgba(50, 50, 50, 0.6);
+  border-radius: 20px;
+  padding: 30px;
+  margin: 20px 0;
+  width: 100%;
+  max-width: 1000px;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+                                /* наведение на карточки */
+.card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 30px rgba(255, 255, 255, 0.1);
+}
+
+
+.card-text {
+  flex: 1;
+  padding-right: 20px;
+}
+
+.card-text h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+.card-text p {
+  font-size: 1.1rem;
+  line-height: 1.5;
+  color: #ccc;
+}
+
+.card-media img {
+  width: 220px;
+  height: auto;
+  border-radius: 10px;
+}
+
+
+.card.download {
+  flex-direction: column;
+  text-align: center;
+}
+
+.card.download .card-media {
+  margin-bottom: 20px;
+}
+
+.download-link {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 24px;
+  background-color: #222;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 8px;
+  transition: background 0.2s ease;
+}
+
+.download-link:hover {
+  background-color: #444;
+}
+
+.back-button {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background-color: #2E2E2E;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: transform 0.2s, background-color 0.3s;
+  transform-origin: center;
+  will-change: transform;
+}
+.back-button:hover {
+  background-color: #626262;
+  transform: scale(1.05);
+}

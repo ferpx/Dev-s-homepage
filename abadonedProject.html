@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dev's article</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
+</head>
+<body>
+  <header>
+    <h1>Dev’s Article</h1>
+  </header>
+
+  <main>
+    <button class="back-button" onclick="window.location.href='index.html'">Back</button>
+    <div class="card download" style="max-width: 1100px; padding: 40px;">
+
+
+      <div style="flex: 1; min-width: 300px;">
+        <h2>Catch Up With Dark</h2>
+        <p style="font-size: 1.1rem;">Заброшенный недоделанный проэкт под названием Cuwd, когда только начинался 3 курс, у нас был такой проект под названием "Догонялки", мне очень понравилась тема, что я начал рисовать разные спрайты для моей игры. Почему тогда не он законченный? - потому что тогда у меня было мало знаний для такого масштабного проекта я сделал очень много спрайтов, анимаций, и т д, но все закончилось на стадии создания кода. Поэтому я забросил идею об создании этой игры и сделал другую которая была гораздо проще </p>
+      </div>
+
+
+      <div style="flex: 1; display: flex; justify-content: center; min-width: 300px;">
+        <img src="{{ url_for('static', filename='StartBackground.png') }}" alt="StartBg preview" style="width: 100%; max-width: 500px; border-radius: 12px;" />
+        <img src="{{ url_for('static', filename='EndbackgroundCatchup.png') }}" alt="StartBg preview" style="width: 100%; max-width: 500px; border-radius: 8px;" />
+      </div>
+    </div>
+  </main>
+</body>
+</html>
