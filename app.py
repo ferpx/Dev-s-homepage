@@ -48,7 +48,5 @@ app.add_url_rule('/download5', 'Boat3dDownload', downloadBoat3d)
 app.add_url_rule('/download6', 'AnalyticDwonload', downloadAnalytic)
 
 if __name__ == '__main__':
-    app.run(debug=True)
-
-port = int(os.environ.get('PORT', 5000))
-app.run(host='0.0.0.0', port=port, debug=False)
+    port = int(os.environ.get('PORT', 5000))
+    app.run(host='0.0.0.0', port=port, debug=False
